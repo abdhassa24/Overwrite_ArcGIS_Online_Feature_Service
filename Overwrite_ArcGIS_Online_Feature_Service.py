@@ -53,10 +53,3 @@ def correctdate(fc): #function that corrects the date because it shows up in Arc
             cursor.updateRow(row)
 
 correctdate("ArcGIS Service Rest Endpoint")
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHu
