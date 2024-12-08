@@ -13,7 +13,7 @@ logging.basicConfig(filename=log_file, filemode='w', level=logging.WARNING,forma
 
 gis = GIS("organization url","username", "password") #Set up a connection by providing your organization url, username and password
    
-def importwiski (urls,info,itemid): #This is a function that takes in three parameters  
+def third_party_api (urls,info,itemid): #This is a function that takes in three parameters  
 
   
     with urllib.request.urlopen(urls) as url: #Using the urllib library to download the data from the API into a geojson format  
@@ -42,7 +42,7 @@ def importwiski (urls,info,itemid): #This is a function that takes in three para
     
 
 #Calling the function and providing the three parameters which are the api url, the geojson file that was downloaded from the API and the itemid of the ArcGIS Online item
-importwiski ("rest endpoint of API","GeoJSON file","itemid")
+third_party_api ("rest endpoint of API","GeoJSON file","itemid")
 
             
 def correctdate(fc): #function that corrects the date because it shows up in ArcGIS Online as an hour ahead and takes daylight savings time to effect
